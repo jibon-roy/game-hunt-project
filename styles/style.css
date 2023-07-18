@@ -1,0 +1,117 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&family=Lato&family=Montserrat&family=PT+Serif&family=Poppins:ital,wght@0,400;0,700;0,800;1,400&family=Work+Sans:wght@300;400;700;800;900&display=swap');
+
+
+/* Style variables */
+:root {
+    --primary-color: #FF42A5;
+    --header-font-color: #0B0223;
+    --header-style-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --button-background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --text-color-1: #3C354F;
+    --text-color-2: #534C64;
+    --max-width: 1440px;
+    --font-family: 'Work Sans', sans-serif;
+}
+
+/* Body style part */
+body {
+    font-family: var(--font-family);
+}
+
+/* primary styles of style header, buttons and paragraph */
+.style-header {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.primary-button {
+    border-radius: 48px;
+    background: --button-background;
+}
+
+.primary-paragraph {
+    color: --text-color-2;
+    size: 18px;
+}
+
+/* Header style part */
+
+header .nav-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+/* header logo part */
+header .nav-container .logo-part {
+    display: flex;
+    align-items: center;
+    flex-grow: 6;
+}
+
+header .nav-container .logo-part p {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header .nav-container .logo-part p span {
+    color: var(--primary-color);
+}
+
+header .nav-container .logo-part img {
+    width: 80px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+/* Header menu part */
+header .nav-container .menu-part {
+    flex: 5.5;
+}
+
+header .nav-container .menu-part ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+
+}
+
+header .nav-container .menu-part ul li a {
+    text-decoration: none;
+    color: var(--text-color-1);
+    font-size: 18px;
+}
+
+header .nav-container .menu-part ul li button {
+    color: var(--text-color-1);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    padding:10px 20px;
+    border-radius: 8px;
+    border: 0;
+}
+
+header .nav-container .menu-part ul li button i:first-child{
+    color: red;
+    margin: 0 10px;
+}
