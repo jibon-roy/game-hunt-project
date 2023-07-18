@@ -3,8 +3,10 @@
     header .nav-container {
         flex-direction: column;
     }
-    header .nav-container .menu-part{
+
+        header .nav-container .menu-part{
         margin: 30px 0;
         width: 100%;
     }
+ 
 }

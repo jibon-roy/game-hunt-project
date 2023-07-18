@@ -27,15 +27,29 @@ body {
 }
 
 /* primary styles of style header, buttons and paragraph */
+.primary-header {
+    font-size: 2.6em;
+    color: --header-font-color;
+}
+
 .style-header {
+    font-size: 2.6em;
+    color: --header-font-color;
+    background: var(--header-style-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .primary-button {
-    border-radius: 48px;
-    background: --button-background;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    background: var(--button-background);
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px;
 }
 
 .primary-paragraph {
@@ -106,12 +120,58 @@ header .nav-container .menu-part ul li button {
     font-family: var(--font-family);
     font-size: 18px;
     font-weight: 500;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     border: 0;
 }
 
-header .nav-container .menu-part ul li button i:first-child{
+header .nav-container .menu-part ul li button i:first-child {
     color: red;
     margin: 0 10px;
+}
+
+/* This is banner section  */
+header .banner-section {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 10px;
+}
+
+header .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .banner-container .banner-content-part{
+    width: 50%;
+    height: 650px;
+    background-image: url('../images/banner-background.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header .banner-container .banner-content-part .style-header{
+    font-size: 4rem;
+    margin: 10px 0 20px 0;
+}
+header .banner-container .banner-content-part p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+header .banner-container .banner-content-part .buttons {
+    margin: 30px 0;
+}
+header .banner-container .banner-content-part .buttons > .button2{
+    background-color: #4EC5F7 !important;
+}
+header .banner-container .banner-img-part{
+    width: 50%;
+}
+header .banner-container .banner-img-part img{
+    width: 100%;
 }

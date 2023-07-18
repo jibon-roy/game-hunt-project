@@ -1,5 +1,13 @@
 @media screen and (max-width:576px) {
-    header .nav-container {
+    
+    /* Header responsive */
+    header .nav-container,header .nav-container .menu-part ul {
         flex-direction: column;
+    }
+    header .nav-container .logo-part{
+        margin: 20px auto;
+    }
+    header .nav-container .menu-part ul li{
+        margin: 20px auto;
     }
 }
