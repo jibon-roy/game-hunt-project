@@ -34,7 +34,7 @@ body {
 }
 
 .style-header {
-    font-size: 2.6em;
+    font-size: 2.6rem;
     color: --header-font-color;
     background: var(--header-style-color);
     background-clip: text;
@@ -54,10 +54,12 @@ body {
     padding: 20px 40px;
     transition: 0.3s !important;
 }
-.primary-button:hover{
+
+.primary-button:hover {
     cursor: pointer;
     opacity: 0.6;
 }
+
 .primary-paragraph {
     font-family: var(--font-family);
     color: var(--text-color-2);
@@ -153,44 +155,52 @@ header .banner-container {
     justify-content: space-between;
     max-width: var(--max-width);
 }
-header .banner-container .banner-content-part{
+
+header .banner-container .banner-content-part {
     width: 50%;
 }
-header .banner-container .banner-content-part .style-header{
+
+header .banner-container .banner-content-part .style-header {
     font-size: 4rem;
     margin: 10px 0 20px 0;
     text-align: left;
 }
-header .banner-container .banner-content-part p{
+
+header .banner-container .banner-content-part p {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 5px 0;
     text-align: left;
 }
+
 header .banner-container .banner-content-part .buttons {
     margin: 30px 0;
     text-align: left;
     display: flex;
     gap: 20px;
 }
-header .banner-container .banner-content-part .buttons > .button2{
+
+header .banner-container .banner-content-part .buttons>.button2 {
     background: #4EC5F7 !important;
 }
 
-header .banner-container .banner-img-part{
+header .banner-container .banner-img-part {
     width: 50%;
 }
-header .banner-container .banner-img-part img{
+
+header .banner-container .banner-img-part img {
     width: 95%;
 }
 
 /* Main section styles */
 /* Main play game section */
-main .play-game-section{
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);;
+main .play-game-section {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    ;
 }
-main .play-game-section .play-game-container{
+
+main .play-game-section .play-game-container {
     max-width: var(--max-width);
     margin: auto;
     display: flex;
@@ -198,27 +208,103 @@ main .play-game-section .play-game-container{
     align-items: center;
     padding: 10px;
 }
-main .play-game-section .play-game-container .play-game-image{
+
+main .play-game-section .play-game-container .play-game-image {
     flex: 5;
 }
-main .play-game-section .play-game-container img{
+
+main .play-game-section .play-game-container img {
     width: 100%;
 }
 
-main .play-game-section .play-game-container .play-game-content{
+main .play-game-section .play-game-container .play-game-content {
     text-align: right;
     padding-right: 30px;
     flex: 2.5;
 }
-main .play-game-section .play-game-container .play-game-content p{
+
+main .play-game-section .play-game-container .play-game-content p {
     margin: 30px auto;
 }
-main .play-game-section .play-game-container .play-game-content .quote{
+
+main .play-game-section .play-game-container .play-game-content .quote {
     margin: 30px auto 10px;
 }
 
+/* Game videos section */
+main .games-video-section .games-video-container {
+    max-width: var(--max-width);
+    margin: 40px 10px;
+}
+
+main .games-video-section .games-video-container .text-container {
+    text-align: center;
+}
+
+main .games-video-section .games-video-container .text-container .primary-paragraph {
+    margin: 30px auto 50px;
+}
+
+main .games-video-section .games-video-container .videos-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 20px;
+    margin: auto;
+}
+
+/* main .games-video-section .games-video-container .videos-container .container {
+    width: calc((100% / 4) - 20px);
+} */
+main .games-video-section .games-video-container .videos-container .container .video {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 5s;
+    position: relative;
+}
+main .games-video-section .games-video-container .videos-container img {
+    width: 100%;
+    transition: 0.3s;
+}
+main .games-video-section .games-video-container .videos-container .container .video i{
+    font-size: 3em;
+    color: #ffffff;
+    visibility: hidden;
+    scale: 0;
+    transition: 0.2s ease-in-out;
+}
+main .games-video-section .games-video-container .videos-container .container .video .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .games-video-section .games-video-container .videos-container .container .video:hover .icon{   
+    background-color: rgba(0,0,0,0.5);
+}
+main .games-video-section .games-video-container .videos-container .container .video:hover i{   
+    visibility: visible;
+    display: block;
+    scale: 1 ;
+}
+main .games-video-section .games-video-container .videos-container .container .video:hover img{
+    scale: 1.1;
+}
+main .games-video-section .games-video-container .videos-container .container p{
+    margin: 20px 0;
+}
+
+
 /* Play directly section style */
-main .play-directly-section .play-directly-container{
+main .play-directly-section .play-directly-container {
     max-width: var(--max-width);
     margin: auto;
     padding: 30px;
@@ -227,15 +313,18 @@ main .play-directly-section .play-directly-container{
     align-items: center;
     gap: 15%;
 }
-main .play-directly-section .play-directly-container .play-directly-content{
+
+main .play-directly-section .play-directly-container .play-directly-content {
     flex: 1;
     text-align: right;
 }
-main .play-directly-section .play-directly-container .play-directly-content p{
+
+main .play-directly-section .play-directly-container .play-directly-content p {
     padding-left: 50%;
     margin: 30px 0;
 }
-main .play-directly-section .play-directly-container .play-directly-image{
+
+main .play-directly-section .play-directly-container .play-directly-image {
     /* height: 650px; */
     /* background: url('../images/play.png');
     background-repeat: no-repeat;
@@ -244,7 +333,8 @@ main .play-directly-section .play-directly-container .play-directly-image{
     position: relative;
     flex: 1;
 }
-main .play-directly-section .play-directly-container .play-directly-image .img-2{
+
+main .play-directly-section .play-directly-container .play-directly-image .img-2 {
     width: 30%;
     position: absolute;
     bottom: -8%;

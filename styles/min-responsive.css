@@ -15,6 +15,12 @@
         margin: 20px auto;
     }
 
+        /* video lists */
+        main .games-video-section .games-video-container .videos-container {
+            grid-template-columns: repeat(1,1fr);
+            width: 60%;
+        }
+
 }
 
 /* Advansed mini mobile phone */

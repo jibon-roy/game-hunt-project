@@ -56,6 +56,11 @@
         text-align: center;
         margin: 0 auto;
     }
+    /* video lists */
+    main .games-video-section .games-video-container .videos-container {
+        grid-template-columns: repeat(2,1fr);
+        width: 60%;
+    }
     /* Dirict play games responsive */
     main .play-directly-section .play-directly-container .play-directly-content p{
         padding: 0;
