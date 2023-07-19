@@ -4,7 +4,8 @@
     /* header responsive part */
     header .nav-container,
     header .banner-container .banner-content-part,
-    main .play-game-section .play-game-container {
+    main .play-game-section .play-game-container,
+    main .play-directly-section .play-directly-container {
         flex-direction: column;
     }
 
@@ -41,11 +42,26 @@
 
     /* Main part responsive part */
     main .play-game-section .play-game-container .play-game-content{
-        width: 80%;
+        width: 100%;
+        padding: 0;
         text-align: center;
     }
-    main .play-game-section .play-game-container .play-game-image{
+    main .play-game-section .play-game-container .play-game-content p{
+        width: 70%;
+    }
+    main .play-game-section .play-game-container .play-game-image,
+    main .play-directly-section .play-directly-container,
+    main .play-directly-section .play-directly-container h1{
         width: 90%;
         text-align: center;
+        margin: 0 auto;
+    }
+    /* Dirict play games responsive */
+    main .play-directly-section .play-directly-container .play-directly-content p{
+        padding: 0;
+        text-align: center;
+    }
+    main .play-directly-section .play-directly-container .play-directly-image{
+        width: 70%;
     }
 }

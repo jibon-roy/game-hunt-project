@@ -15,6 +15,7 @@
     --header-font-color: #0B0223;
     --header-style-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     --button-background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --button-background-2: linear-gradient(90deg, #DF2285 0%, #DF2285 100%);
     --text-color-1: #3C354F;
     --text-color-2: #534C64;
     --max-width: 1440px;
@@ -29,7 +30,7 @@ body {
 /* primary styles of style header, buttons and paragraph */
 .primary-header {
     font-size: 2.6em;
-    color: --header-font-color;
+    color: var(--header-font-color);
 }
 
 .style-header {
@@ -47,11 +48,16 @@ body {
     font-size: 20px;
     font-weight: 600;
     background: var(--button-background);
+    background-color: var(--button-background-2);
     border: none;
     border-radius: 30px;
     padding: 20px 40px;
+    transition: 0.3s !important;
 }
-
+.primary-button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
 .primary-paragraph {
     font-family: var(--font-family);
     color: var(--text-color-2);
@@ -171,6 +177,7 @@ header .banner-container .banner-content-part .buttons {
 header .banner-container .banner-content-part .buttons > .button2{
     background: #4EC5F7 !important;
 }
+
 header .banner-container .banner-img-part{
     width: 50%;
 }
@@ -200,6 +207,7 @@ main .play-game-section .play-game-container img{
 
 main .play-game-section .play-game-container .play-game-content{
     text-align: right;
+    padding-right: 30px;
     flex: 2.5;
 }
 main .play-game-section .play-game-container .play-game-content p{
@@ -207,4 +215,38 @@ main .play-game-section .play-game-container .play-game-content p{
 }
 main .play-game-section .play-game-container .play-game-content .quote{
     margin: 30px auto 10px;
+}
+
+/* Play directly section style */
+main .play-directly-section .play-directly-container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+}
+main .play-directly-section .play-directly-container .play-directly-content{
+    flex: 1;
+    text-align: right;
+}
+main .play-directly-section .play-directly-container .play-directly-content p{
+    padding-left: 50%;
+    margin: 30px 0;
+}
+main .play-directly-section .play-directly-container .play-directly-image{
+    /* height: 650px; */
+    /* background: url('../images/play.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain 100%; */
+    position: relative;
+    flex: 1;
+}
+main .play-directly-section .play-directly-container .play-directly-image .img-2{
+    width: 30%;
+    position: absolute;
+    bottom: -8%;
+    left: -15%;
 }
