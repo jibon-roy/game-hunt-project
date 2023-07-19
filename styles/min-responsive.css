@@ -1,13 +1,28 @@
+/* mid display mobile phone */
 @media screen and (max-width:576px) {
-    
+
     /* Header responsive */
-    header .nav-container,header .nav-container .menu-part ul {
+    header .nav-container,
+    header .nav-container .menu-part ul {
         flex-direction: column;
     }
-    header .nav-container .logo-part{
+
+    header .nav-container .logo-part {
         margin: 20px auto;
     }
-    header .nav-container .menu-part ul li{
+
+    header .nav-container .menu-part ul li {
         margin: 20px auto;
+    }
+
+}
+
+/* Advansed mini mobile phone */
+@media screen and (max-width:400px) {
+
+    /* banner part */
+    header .banner-container .banner-content-part .buttons {
+        flex-direction: column;
+
     }
 }

@@ -132,46 +132,47 @@ header .nav-container .menu-part ul li button i:first-child {
 
 /* This is banner section  */
 header .banner-section {
-    max-width: var(--max-width);
-    margin: auto;
     padding: 10px;
+    background: url('../images/banner-background.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
 }
 
 header .banner-container {
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: var(--max-width);
 }
 header .banner-container .banner-content-part{
     width: 50%;
-    height: 650px;
-    background-image: url('../images/banner-background.png');
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 header .banner-container .banner-content-part .style-header{
     font-size: 4rem;
     margin: 10px 0 20px 0;
+    text-align: left;
 }
 header .banner-container .banner-content-part p{
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 5px 0;
+    text-align: left;
 }
 header .banner-container .banner-content-part .buttons {
     margin: 30px 0;
+    text-align: left;
+    display: flex;
+    gap: 20px;
 }
 header .banner-container .banner-content-part .buttons > .button2{
-    background-color: #4EC5F7 !important;
+    background: #4EC5F7 !important;
 }
 header .banner-container .banner-img-part{
     width: 50%;
 }
 header .banner-container .banner-img-part img{
-    width: 100%;
+    width: 95%;
 }
