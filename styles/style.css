@@ -53,7 +53,8 @@ body {
 }
 
 .primary-paragraph {
-    color: --text-color-2;
+    font-family: var(--font-family);
+    color: var(--text-color-2);
     size: 18px;
 }
 
