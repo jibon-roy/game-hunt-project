@@ -258,14 +258,15 @@ main .games-video-section .games-video-container .videos-container {
     width: calc((100% / 4) - 20px);
 } */
 main .games-video-section .games-video-container .videos-container .container .video {
-    width: 100%;
     overflow: hidden;
+    padding-bottom: -4px;
+    border: 2px solid transparent;
     border-radius: 15px;
-    transition: 5s;
     position: relative;
 }
 main .games-video-section .games-video-container .videos-container img {
     width: 100%;
+    height: 105%;
     transition: 0.3s;
 }
 main .games-video-section .games-video-container .videos-container .container .video i{
@@ -283,14 +284,26 @@ main .games-video-section .games-video-container .videos-container .container .v
     height: 100%;
     transition: 0.3s;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+main .video:hover{
+    border-color:#DF2285 !important;
+}
 main .games-video-section .games-video-container .videos-container .container .video:hover .icon{   
     background-color: rgba(0,0,0,0.5);
 }
-main .games-video-section .games-video-container .videos-container .container .video:hover i{   
+main .games-video-section .games-video-container .videos-container .container .video .icon p{
+    color: #F948B2;
+    font-weight: 600;
+    visibility: hidden;
+    scale: 0;
+    transition: 0.2s ease-in-out;
+}   
+main .games-video-section .games-video-container .videos-container .container .video:hover i,
+main .games-video-section .games-video-container .videos-container .container .video:hover p{   
     visibility: visible;
     display: block;
     scale: 1 ;
@@ -339,4 +352,44 @@ main .play-directly-section .play-directly-container .play-directly-image .img-2
     position: absolute;
     bottom: -8%;
     left: -15%;
+}
+
+/* More games part */
+
+main .more-games-section{
+    background: linear-gradient(90deg, rgba(255, 66, 164, 0.294) 0%, rgba(255, 66, 164, 0.163) 100%);
+}
+main .more-games-section .more-games-container{
+    max-width: var(--max-width);
+    margin: 40px auto 0;
+    padding: 100px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .more-games-section .more-games-container .games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 5px;
+    gap: 10px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+main .more-games-section .more-games-container .games:hover{
+    border: 1px solid #F948B2;
+    color: #F948B2;
+
+}
+
+main .more-games-section .more-games-container .games img{
+    width: 40px;
 }

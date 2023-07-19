@@ -69,4 +69,8 @@
     main .play-directly-section .play-directly-container .play-directly-image{
         width: 70%;
     }
+    /* More games part */
+    main .more-games-section .more-games-container{
+        padding: 0 30px;
+    }
 }
