@@ -133,8 +133,13 @@ header .nav-container .menu-part ul li button {
     padding: 10px 20px;
     border-radius: 8px;
     border: 0;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+header .nav-container .menu-part ul li button:hover{
+    background-color: #DFDFDF;
+}
 header .nav-container .menu-part ul li button i:first-child {
     color: red;
     margin: 0 10px;
@@ -235,7 +240,7 @@ main .play-game-section .play-game-container .play-game-content .quote {
 /* Game videos section */
 main .games-video-section .games-video-container {
     max-width: var(--max-width);
-    margin: 40px 10px;
+    margin: 40px auto;
 }
 
 main .games-video-section .games-video-container .text-container {
@@ -248,7 +253,7 @@ main .games-video-section .games-video-container .text-container .primary-paragr
 
 main .games-video-section .games-video-container .videos-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: baseline;
     justify-content: space-around;
     gap: 20px;
@@ -265,19 +270,22 @@ main .games-video-section .games-video-container .videos-container .container .v
     border-radius: 15px;
     position: relative;
 }
+
 main .games-video-section .games-video-container .videos-container img {
     width: 100%;
     height: 105%;
     transition: 0.3s;
 }
-main .games-video-section .games-video-container .videos-container .container .video i{
+
+main .games-video-section .games-video-container .videos-container .container .video i {
     font-size: 3em;
     color: #ffffff;
     visibility: hidden;
     scale: 0;
     transition: 0.2s ease-in-out;
 }
-main .games-video-section .games-video-container .videos-container .container .video .icon{
+
+main .games-video-section .games-video-container .videos-container .container .video .icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -290,29 +298,35 @@ main .games-video-section .games-video-container .videos-container .container .v
     align-items: center;
 
 }
-main .video:hover{
-    border-color:#DF2285 !important;
+
+main .video:hover {
+    border-color: #DF2285 !important;
 }
-main .games-video-section .games-video-container .videos-container .container .video:hover .icon{   
-    background-color: rgba(0,0,0,0.5);
+
+main .games-video-section .games-video-container .videos-container .container .video:hover .icon {
+    background-color: rgba(0, 0, 0, 0.5);
 }
-main .games-video-section .games-video-container .videos-container .container .video .icon p{
+
+main .games-video-section .games-video-container .videos-container .container .video .icon p {
     color: #F948B2;
     font-weight: 600;
     visibility: hidden;
     scale: 0;
     transition: 0.2s ease-in-out;
-}   
+}
+
 main .games-video-section .games-video-container .videos-container .container .video:hover i,
-main .games-video-section .games-video-container .videos-container .container .video:hover p{   
+main .games-video-section .games-video-container .videos-container .container .video:hover p {
     visibility: visible;
     display: block;
-    scale: 1 ;
+    scale: 1;
 }
-main .games-video-section .games-video-container .videos-container .container .video:hover img{
+
+main .games-video-section .games-video-container .videos-container .container .video:hover img {
     scale: 1.1;
 }
-main .games-video-section .games-video-container .videos-container .container p{
+
+main .games-video-section .games-video-container .videos-container .container p {
     margin: 20px 0;
 }
 
@@ -357,10 +371,12 @@ main .play-directly-section .play-directly-container .play-directly-image .img-2
 
 /* More games part */
 
-main .more-games-section{
+main .more-games-section {
+    margin-top: 100px;
     background: linear-gradient(90deg, rgba(255, 66, 164, 0.294) 0%, rgba(255, 66, 164, 0.163) 100%);
 }
-main .more-games-section .more-games-container{
+
+main .more-games-section .more-games-container {
     max-width: var(--max-width);
     margin: 40px auto 0;
     padding: 100px 5%;
@@ -369,7 +385,7 @@ main .more-games-section .more-games-container{
     justify-content: center;
 }
 
-main .more-games-section .more-games-container .games{
+main .more-games-section .more-games-container .games {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,33 +401,36 @@ main .more-games-section .more-games-container .games{
     cursor: pointer;
 }
 
-main .more-games-section .more-games-container .games:hover{
+main .more-games-section .more-games-container .games:hover {
     border: 1px solid #F948B2;
     color: #F948B2;
 
 }
 
-main .more-games-section .more-games-container .games img{
+main .more-games-section .more-games-container .games img {
     width: 40px;
 }
 
 /* Footer section  */
-footer{
+footer {
     background-color: var(--footer-background);
     padding: 100px 0;
     text-align: center;
 }
-footer .footer-container{
+
+footer .footer-container {
     max-width: var(--max-width);
     margin: auto;
     text-align: center;
 }
-footer .footer-logo  {
+
+footer .footer-logo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 6;
 }
+
 footer .footer-logo p {
     text-align: center;
     font-family: var(--font-family);
@@ -421,45 +440,49 @@ footer .footer-logo p {
     line-height: normal;
     color: #ffffff;
 }
-footer .footer-logo span{
+
+footer .footer-logo span {
     color: var(--primary-color);
 }
 
-footer .footer-menu{
+footer .footer-menu {
     width: 80%;
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
-footer .footer-menu a{
+
+footer .footer-menu a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
 }
 
-footer .footer-icon i{
+
+footer .footer-icon i {
     margin: 0 20px 50px;
     font-size: 2rem;
     color: #ffffff;
 }
 
-footer .policy-menu{
-    margin:0 auto 50px;
+footer .policy-menu {
+    margin: 0 auto 50px;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
-footer .policy-menu a{
+
+footer .policy-menu a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.60);
     font-weight: 500;
-    
+
 }
 
-footer .copy-rights p{
+footer .copy-rights p {
     color: rgba(255, 255, 255, 0.60);
 }
