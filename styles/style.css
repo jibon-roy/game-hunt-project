@@ -16,6 +16,7 @@
     --header-style-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     --button-background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     --button-background-2: linear-gradient(90deg, #DF2285 0%, #DF2285 100%);
+    --footer-background: #0B0223;
     --text-color-1: #3C354F;
     --text-color-2: #534C64;
     --max-width: 1440px;
@@ -392,4 +393,73 @@ main .more-games-section .more-games-container .games:hover{
 
 main .more-games-section .more-games-container .games img{
     width: 40px;
+}
+
+/* Footer section  */
+footer{
+    background-color: var(--footer-background);
+    padding: 100px 0;
+    text-align: center;
+}
+footer .footer-container{
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+}
+footer .footer-logo  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 6;
+}
+footer .footer-logo p {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #ffffff;
+}
+footer .footer-logo span{
+    color: var(--primary-color);
+}
+
+footer .footer-menu{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+footer .footer-menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+footer .footer-icon i{
+    margin: 0 20px 50px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+footer .policy-menu{
+    margin:0 auto 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+footer .policy-menu a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    
+}
+
+footer .copy-rights p{
+    color: rgba(255, 255, 255, 0.60);
 }
