@@ -3,7 +3,8 @@
 
     /* header responsive part */
     header .nav-container,
-    header .banner-container .banner-content-part {
+    header .banner-container .banner-content-part,
+    main .play-game-section .play-game-container {
         flex-direction: column;
     }
 
@@ -38,5 +39,13 @@
         width: 80%;
     }
 
-
+    /* Main part responsive part */
+    main .play-game-section .play-game-container .play-game-content{
+        width: 80%;
+        text-align: center;
+    }
+    main .play-game-section .play-game-container .play-game-image{
+        width: 90%;
+        text-align: center;
+    }
 }
